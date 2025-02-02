@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin raleway-regular {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+@mixin raleway-bold {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.todo-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  @include raleway-regular;
+  width: 90%;
+  font-size: 14px;
+
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    @include raleway-bold;
+  }
+
+  .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+
+    input{
+      flex: 1;
+      padding: 8px;
+      // width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      @include raleway-regular;
+      color: #000;
+    }
+
+    select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      @include raleway-regular;
+    }
+
+    button {
+      background: #195f2a;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      @include raleway-regular;
+
+      &:hover {
+        background: #218838;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    .task {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #f9f9f9;
+      padding: 8px;
+      border-radius: 5px;
+      margin-bottom: 8px;
+      gap: 5px;
+      transition: background 0.3s;
+
+      &.completed {
+        text-decoration: line-through;
+        background: #d4edda;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 8px;
+      }
+
+      span {
+        flex: 1;
+        cursor: pointer;
+      }
+
+      select {
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 4px;
+        @include raleway-regular;
+      }
+
+      button {
+        background: #dc3545;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        @include raleway-regular;
+
+        &:hover {
+          background: #c82333;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .todo-container {
+    // width: 100%;
+    padding: 15px;
+  }
+
+  .task-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
