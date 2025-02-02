@@ -16,13 +16,13 @@
 .todo-container {
   max-width: 500px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 15px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   @include raleway-regular;
   width: 90%;
-  font-size: 14px;
+  font-size: 16px;
 
   h1 {
     text-align: center;
@@ -38,17 +38,18 @@
     flex-wrap: wrap;
 
     input{
-      flex: 1;
+      // flex: 1;
       padding: 8px;
       // width: 100%;
       border: 1px solid #ccc;
       border-radius: 5px;
       @include raleway-regular;
       color: #000;
+      font-size: 16px;
     }
 
     select {
-      padding: 8px;
+      padding: 6px;
       border: 1px solid #ccc;
       border-radius: 5px;
       @include raleway-regular;
