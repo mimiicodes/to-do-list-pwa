@@ -20,12 +20,12 @@ export default defineConfig({
         display: 'standalone',
         icons: [
           {
-            src: '/arcticons--opentodolist.png',
+            src: '/Icon1.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/arcticons--opentodolist(1).png',
+            src: '/Icon2.png',
             sizes: '512x512',
             type: 'image/png',
           },
