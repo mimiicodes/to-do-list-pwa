@@ -1,0 +1,1 @@
+{"name":"MY TDL","short_name":"MY TDL","start_url":"/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/","description":"A simple PWA using Vite","theme_color":"#ffffff","icons":[{"src":"/arcticons--opentodolist.png","sizes":"192x192","type":"image/png"},{"src":"/arcticons--opentodolist(1).png","sizes":"512x512","type":"image/png"}]}
