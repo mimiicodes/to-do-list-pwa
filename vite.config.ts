@@ -7,9 +7,9 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate', // Ensures updates are fetched automatically
+      registerType: 'autoUpdate',
       devOptions: {
-        enabled: true, // Enable PWA in dev mode (optional)
+        enabled: true,
       },
       manifest: {
         name: 'MY TDL',
@@ -32,7 +32,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,png,svg,ico}'], // Cache static assets
+        globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
       },
     }),
   ],
